@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+}
+
+html {
+  overflow-y: auto !important;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: auto;
+  position: relative;
+  padding-left: 100px;
+}
+
+.wrapper__content {
+  width: 1175px;
+}
+
+.theme--light.v-application {
+  background: #ffffff !important;
+}
+
+body .v-application .primary--text {
+  color: black !important;
+  caret-color: black !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+/*input,
+input::-webkit-input-placeholder {
+  color: black !important;
+  letter-spacing: 0;
+}*/
+
+.v-application .v-card > *:first-child:not(.v-btn):not(.v-chip),
+.v-application .v-card > .v-card__progress + *:not(.v-btn):not(.v-chip) {
+  width: 280px !important;
+}
+
+.v-application .v-date-picker-table--date th,
+.v-application .v-date-picker-header__value button {
+  padding: 0 !important;
+}
+
+.v-application .v-date-picker-header {
+  padding: 0 16px !important;
+}
+
+.v-application .v-date-picker-table--date .v-btn {
+  height: 26px !important;
+  width: 26px !important;
+}
+
+.v-application .v-date-picker-table {
+  position: relative;
+  padding: 0;
+  height: 190px;
+}
+
+.v-application .v-date-picker-table .v-btn.v-btn--active {
+  color: #000000;
+  background-color: #D9D9D9 !important;
+  border-color: #D9D9D9 !important;
+}
+
+.v-application .accent--text:hover,
+.v-application .v-btn.accent--text {
+  color: #969696 !important;
+  caret-color: #969696 !important;
+}
+
+.v-application .v-card__actions {
+  padding: 0 8px 8px 8px !important;
+}
+
+.v-application .theme--light.v-label {
+  color: #000000 !important;
+}
+
+.v-application {
+  font-family: 'Inter', sans-serif !important;
+  line-height: 1.5;
+}
+
+.v-application .v-text-field > .v-input__control > .v-input__slot:after,
+.v-application .v-text-field__details {
+  display: none !important;
+}
+
+.v-application .v-input__slot {
+  margin-bottom: 0;
+}
+
+body .v-application .mr-2 {
+  margin-right: 10px !important;
+}
+
+i.arrow {
+  background: url("../assets/icons/chevron-up.svg") no-repeat center center;
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+
+i.smile {
+  background: url("../assets/icons/smile.svg") no-repeat center center;
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+
+i.dislike {
+  background: url("../assets/icons/thumbs-down.svg") no-repeat center center;
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+
+i.search-small {
+  background: url("../assets/icons/search-small.svg") no-repeat center center;
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+
+i.share {
+  background: url("../assets/icons/share-2.svg") no-repeat center center;
+  width: 30px;
+  display: block;
+  height: 30px;
+}
+
+i.order {
+  background: url("../assets/icons/order.png") no-repeat center center;
+  width: 40px;
+  display: block;
+  height: 40px;
+  min-width: 40px;
+}
+
+i.manual {
+  background: url("../assets/icons/manual.png") no-repeat center center;
+  width: 40px;
+  display: block;
+  height: 40px;
+  min-width: 40px;
+}
+
+i.statement {
+  background: url("../assets/icons/statement.png") no-repeat center center;
+  width: 40px;
+  display: block;
+  height: 40px;
+  min-width: 40px;
+}
+
+.grey-text {
+  color: #959595;
+  font-size: 16px;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+@media (max-width: 1600px) {
+   .wrapper__content {
+     width: 100%;
+   }
+}
+
+@media (max-width: 1024px) {
+   .wrapper__content {
+     width: 100%;
+   }
+
+  .wrapper {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 930px) {
+   .web-only {
+     display: none !important;
+   }
+}
+

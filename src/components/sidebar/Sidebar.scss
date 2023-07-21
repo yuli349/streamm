@@ -1,0 +1,54 @@
+.sidebar {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  padding: 20px 30px;
+  background: var(--background-color);
+
+  &__menu-link {
+
+    &:hover,
+    &.active {
+      opacity: 0.6;
+    }
+  }
+
+  &__menu {
+    padding-left: 0 !important;
+  }
+
+  &__menu-item {
+    list-style: none;
+    margin-bottom: 65px;
+  }
+
+  &__menu-link .icon {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url("../../assets/icons/album.svg") no-repeat;
+    background-size: 100%;
+  }
+
+  &__menu-link--mail .icon {
+    background: url("../../assets/icons/mail.svg") no-repeat;
+  }
+
+  &__menu-link--messages-square .icon {
+    background: url("../../assets/icons/messages-square.svg") no-repeat;
+  }
+
+  &__menu-link--folder-clock .icon {
+    background: url("../../assets/icons/folder-clock.svg") no-repeat;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
+}
